@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'; //imports use effect from react
+import { useEffect, useState } from 'react'; //imports useEffect from react
 import Book from "./Book"; //imports Books function
 import axios from 'axios'; //imports axious
 
@@ -12,7 +12,7 @@ function Read() {
         axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
             .then(
                 (response) => {
-                    setData(response.data.books); //if no error will send a response
+                    setData(response.data.books); //call back when callback is completed this funtion will get completed if no error will send a response
                 }
             )
             .catch(
