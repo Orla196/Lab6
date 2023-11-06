@@ -9,10 +9,10 @@ function Read() {
 
     useEffect(() => {
         //api link https://jsonblob.com/api/jsonblob/1161593332966481920
-        axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
+        axios.get('http://localhost:4000/api/books') //takes from server.js
             .then(
                 (response) => {
-                    setData(response.data.books); //call back when callback is completed this funtion will get completed if no error will send a response
+                    setData(response.data.myBooks); //call back when callback is completed this funtion will get completed if no error will send a response
                 }
             )
             .catch(
